@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Length Convertion Calculator</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body style="background-color: lightpink">
+	<br>
+	<center><div class="container" style="background-color: white">
+		<br>
+		<h1 style="text-align: center;">Length Convertion Calculator</h1>
+		millimeters: <input type="number" id="operandOne">
+		<br>
+		<br>
+		<button onclick="centimeters()">mm -> cm</button>
+		<button onclick="meters()">mm -> m</button>
+		<button onclick="kilometers()">mm -> km</button>
+		<br>
+		<br>
+	</div></center>
+
+
+</body>
+	<script type="text/javascript">
+		function centimeters(){
+		let a = parseInt (document.getElementById('operandOne').value);
+		let b = 10;
+		alert(a / b);
+	}
+
+	function meters(){
+		let a = parseInt (document.getElementById('operandOne').value);
+		let b = 1000;
+		alert(a / b);
+	}
+
+	function kilometers(){
+		let a = parseInt (document.getElementById('operandOne').value);
+		let b = 1000000;
+		alert(a / b);
+	}
+	</script>
+</html>
